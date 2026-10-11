@@ -57,6 +57,18 @@
           "founder": { "@id": "https://srkstudios.art/#person" },
           "email": "mailto:kornisivaramkrishna@gmail.com",
           "areaServed": "Worldwide",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Mobile product development services",
+            "itemListElement": [
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Flutter app development" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Startup MVP development" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mobile UI and UX implementation" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Flutter plugin and native integration" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Application maintenance and upgrades" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "App store release and deployment" } }
+            ]
+          },
           "sameAs": [
             "https://github.com/srkstudios",
             "https://pub.dev/publishers/srkstudios.art/packages"
@@ -85,6 +97,42 @@
           "applicationCategory": "LifestyleApplication",
           "description": "A home-services marketplace connecting customers in the United States with local professionals.",
           "creator": { "@id": "https://srkstudios.art/#person" }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://srkstudios.art/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What kinds of projects does SRK Studios take on?",
+              "acceptedAnswer": { "@type": "Answer", "text": "New Flutter products, startup MVPs, features for existing applications, full-stack mobile builds, custom plugin and native work, backend integrations, and modernization work for existing codebases." }
+            },
+            {
+              "@type": "Question",
+              "name": "How do we start a project?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Email SRK Studios with a short description of the product, problem, or existing app. After focused follow-up questions and a discovery conversation, you receive a written scope covering milestones, timing, and cost." }
+            },
+            {
+              "@type": "Question",
+              "name": "How does SRK Studios charge?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Well-defined work can be priced by milestone. Ongoing development, maintenance, and exploratory product work can use a weekly or hourly model. The structure is agreed in writing before development begins." }
+            },
+            {
+              "@type": "Question",
+              "name": "Who owns the code and accounts?",
+              "acceptedAnswer": { "@type": "Answer", "text": "The client owns the repositories, store listings, backend services, credentials, and documentation. SRK Studios aims for a clean handover without artificial lock-in." }
+            },
+            {
+              "@type": "Question",
+              "name": "Does SRK Studios provide support after launch?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Yes. Support can include dependency and Flutter upgrades, OS compatibility work, production fixes, monitoring, performance improvements, and new feature iterations." }
+            },
+            {
+              "@type": "Question",
+              "name": "Can SRK Studios join an existing team or codebase?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Yes. Sivaramakrishna can work alongside an internal team or other specialists, follow existing conventions and delivery processes, contribute through code review, and own a defined product or engineering area." }
+            }
+          ]
         }
       ]
     }
@@ -95,7 +143,7 @@
   <header class="site-header">
     <a class="brand" href="#top" aria-label="SRK Studios, home"><span class="brand-mark"><img src="/srk-logo-v2.png" alt=""></span><span>SRK Studios <small>by Sivaramakrishna</small></span></a>
     <nav aria-label="Primary navigation">
-      <a href="#work">Work</a><a href="#open-source">Open source</a><a href="#about">About</a>
+      <a href="#services">Services</a><a href="#work">Work</a><a href="#process">Process</a><a href="#about">About</a><a href="#faq">FAQ</a>
       <a class="nav-cta" href="mailto:kornisivaramkrishna@gmail.com">Let’s talk <span aria-hidden="true">↗</span></a>
     </nav>
   </header>
@@ -159,6 +207,21 @@
       </div>
     </section>
 
+    <section class="section services" id="services">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow">Services / What I build</p><h2>One studio for the entire product journey.</h2></div>
+        <p>From an early product idea to an app already serving users, SRK Studios can own a focused piece of the work or take responsibility for the complete build.</p>
+      </div>
+      <div class="services-grid">
+        <article class="service-card reveal"><div class="service-top"><span>01</span><i aria-hidden="true">↗</i></div><h3>App development</h3><p>End-to-end Flutter apps for Android and iOS—including architecture, state management, offline behavior, backend integration, and an interface that feels at home on both platforms.</p></article>
+        <article class="service-card reveal"><div class="service-top"><span>02</span><i aria-hidden="true">↗</i></div><h3>MVPs for startups</h3><p>Turn a product idea into a focused first release. I help shape the scope, build the essential experience, connect the systems behind it, and get it into real users’ hands.</p></article>
+        <article class="service-card reveal"><div class="service-top"><span>03</span><i aria-hidden="true">↗</i></div><h3>UI/UX implementation</h3><p>High-fidelity builds from Figma or existing design files, with responsive layouts, thoughtful motion, dark mode, accessibility, and the edge states that make a product feel complete.</p></article>
+        <article class="service-card reveal"><div class="service-top"><span>04</span><i aria-hidden="true">↗</i></div><h3>Plugins &amp; native integration</h3><p>Custom Flutter plugins and platform-channel work using Kotlin and Swift. My published pub.dev package reflects the same production mindset I bring to client integrations.</p></article>
+        <article class="service-card reveal"><div class="service-top"><span>05</span><i aria-hidden="true">↗</i></div><h3>Maintenance &amp; upgrades</h3><p>Flutter migrations, dependency upgrades, performance tuning, architectural cleanup, and careful modernization of codebases that need to become dependable and shippable again.</p></article>
+        <article class="service-card reveal"><div class="service-top"><span>06</span><i aria-hidden="true">↗</i></div><h3>Release &amp; store deployment</h3><p>Signing, store configuration, review requirements, CI/CD, staged rollout, and production monitoring—taking the build all the way to Google Play and the App Store.</p></article>
+      </div>
+    </section>
+
     <section class="section" id="work">
       <div class="section-heading reveal">
         <div><p class="eyebrow">Selected work / Shipped by SRK Studios</p><h2>Proof, not promises.</h2></div>
@@ -209,6 +272,19 @@
       </div>
     </section>
 
+    <section class="section process" id="process">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow">Process / How we work together</p><h2>Visible progress. Clear decisions. No mystery layer.</h2></div>
+        <p>You communicate directly with the person designing the architecture and writing the code. Every phase ends with something concrete you can review.</p>
+      </div>
+      <ol class="process-list">
+        <li class="process-step reveal"><div class="step-marker"><span>01</span></div><div><h3>Discover</h3><p>We clarify the problem, users, priorities, constraints, and success criteria. You receive a practical scope with milestones, timing, and a clear pricing approach.</p></div></li>
+        <li class="process-step reveal"><div class="step-marker"><span>02</span></div><div><h3>Shape</h3><p>Flows, wireframes, and technical decisions make the product tangible before heavy development. Important assumptions are tested while changes are still inexpensive.</p></div></li>
+        <li class="process-step reveal"><div class="step-marker"><span>03</span></div><div><h3>Build</h3><p>Development happens in short, reviewable cycles. You see installable builds, working integrations, and honest trade-offs as the product grows—not only at the end.</p></div></li>
+        <li class="process-step reveal"><div class="step-marker"><span>04</span></div><div><h3>Launch</h3><p>I handle release preparation, store submission, production checks, documentation, and clean handover. Ongoing support is available when the product needs its next iteration.</p></div></li>
+      </ol>
+    </section>
+
     <section class="section open-source" id="open-source">
       <div class="package-panel reveal">
         <div class="package-intro">
@@ -226,6 +302,19 @@
       </div>
     </section>
 
+    <section class="section stack-section" id="stack">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow">Capabilities / Technology</p><h2>A stack chosen around the product.</h2></div>
+        <p>I use proven tools across mobile, backend, data, and delivery—choosing what keeps the product maintainable rather than following whatever is fashionable this month.</p>
+      </div>
+      <div class="stack-board reveal">
+        <div class="stack-group"><span>Mobile</span><h3>Flutter · Dart</h3><p>Kotlin · Swift · Platform Channels · Riverpod · Bloc</p></div>
+        <div class="stack-group"><span>Backend</span><h3>Go · Node.js</h3><p>Python · Firebase · REST · GraphQL · Authentication</p></div>
+        <div class="stack-group"><span>Data</span><h3>PostgreSQL · SQL</h3><p>SQLite · Drift · Data modeling · Offline synchronization</p></div>
+        <div class="stack-group"><span>Delivery</span><h3>CI/CD · Docker</h3><p>GitHub Actions · Codemagic · Google Play · App Store</p></div>
+      </div>
+    </section>
+
     <section class="section about" id="about">
       <div class="about-grid reveal">
         <div class="portrait-card" aria-hidden="true"><div class="portrait-lockup"><div class="portrait-monogram"><img src="/srk-logo-v2.png" alt=""></div><p class="portrait-quote">Every layer, personally engineered.<br>Every launch, proudly SRK.</p></div><div class="portrait-footer"><span>IND / REMOTE</span><span>06:30 → UTC</span></div></div>
@@ -233,12 +322,25 @@
           <p class="eyebrow">About me</p><h2>One developer. The whole product surface.</h2>
           <p>I’m Sivaramakrishna, the founder and developer behind SRK Studios. My home base is Flutter, but the studio’s work follows the product wherever it needs to go—from accessible interface details and native platform code to Go services, Firebase, REST APIs, PostgreSQL, and release automation.</p>
           <p>I care about the invisible parts of good software: thoughtful states, maintainable architecture, resilient integrations, and clean handover. The goal is not simply to make an app run. It is to make it ready for real people.</p>
-          <div class="skills-grid">
-            <div><span>Mobile</span><p>Flutter · Dart · Kotlin · Swift</p></div><div><span>Backend</span><p>Go · Node.js · Python · Firebase · REST</p></div>
-            <div><span>Data</span><p>PostgreSQL · SQL · SQLite · Data modeling</p></div><div><span>Product</span><p>UI implementation · Prototyping · Accessibility</p></div>
-            <div><span>Delivery</span><p>GitHub Actions · Codemagic · App stores</p></div><div><span>Engagement</span><p>Freelance builds · Product ownership · Support</p></div>
+          <div class="skills-grid studio-values">
+            <div><span>Direct communication</span><p>You work with the developer, not a middleman. Questions are answered by the person building the product.</p></div>
+            <div><span>Production mindset</span><p>Error states, offline behavior, upgrades, and release realities are part of the plan—not an afterthought.</p></div>
+            <div><span>You own everything</span><p>Source code, repositories, accounts, and documentation remain under your ownership, without artificial lock-in.</p></div>
+            <div><span>Proof in public</span><p>The studio’s open-source work shows the engineering standard before a client engagement begins.</p></div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="faq-intro reveal"><p class="eyebrow">FAQ / Working together</p><h2>The useful questions, answered upfront.</h2><p>Still deciding whether SRK Studios fits your project? These are the things clients usually want to understand first.</p><a href="mailto:kornisivaramkrishna@gmail.com">Ask something else ↗</a></div>
+      <div class="faq-list reveal">
+        <details><summary>What kinds of projects do you take on?<span aria-hidden="true">+</span></summary><p>New Flutter products, startup MVPs, features for existing applications, full-stack mobile builds, custom plugin and native work, backend integrations, and rescue or modernization work for codebases that have become difficult to ship.</p></details>
+        <details><summary>How do we start a project?<span aria-hidden="true">+</span></summary><p>Email <a href="mailto:kornisivaramkrishna@gmail.com">kornisivaramkrishna@gmail.com</a> with a short description of the product, problem, or existing app. I’ll reply with focused questions and arrange a discovery conversation. From there, you receive a written scope covering milestones, timing, and cost.</p></details>
+        <details><summary>How do you charge?<span aria-hidden="true">+</span></summary><p>Well-defined work can be priced by milestone. Ongoing development, maintenance, and exploratory product work can use a weekly or hourly model. The structure and expectations are agreed in writing before development begins.</p></details>
+        <details><summary>Who owns the code and accounts?<span aria-hidden="true">+</span></summary><p>You do. Repositories, store listings, backend services, credentials, and documentation should live under your ownership wherever possible. The goal is a clean handover with no artificial lock-in.</p></details>
+        <details><summary>Do you provide support after launch?<span aria-hidden="true">+</span></summary><p>Yes. Support can include dependency and Flutter upgrades, OS compatibility work, production fixes, monitoring, performance improvements, and new feature iterations—either on demand or through an ongoing arrangement.</p></details>
+        <details><summary>Can you join an existing team or codebase?<span aria-hidden="true">+</span></summary><p>Yes. I can work alongside an internal team or other specialists, follow the project’s existing conventions and delivery process, contribute through code reviews, and take ownership of a defined product or engineering area.</p></details>
       </div>
     </section>
 
