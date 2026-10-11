@@ -1,396 +1,91 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Open source Flutter packages by SRK Studios — including dynamic_app_icon_changer, a plugin for runtime app icon changes on Android and iOS." />
-    <meta name="keywords" content="Flutter packages, pub.dev, dynamic app icon, Flutter plugin, open source, SRK Studios" />
-    <meta property="og:title" content="Open Source Packages | SRK Studios" />
-    <meta property="og:description" content="Production-ready open source Flutter packages that handle complex edge cases flawlessly on Android and iOS." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://srkstudios.art/packages/" />
-    <title>Open Source Packages | SRK Studios</title>
-    <link rel="icon" type="image/png" href="/logo.png" />
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="dynamic_app_icon_changer — a Flutter package for changing launcher icons at runtime on Android and iOS.">
+  <meta property="og:title" content="dynamic_app_icon_changer — SRK Studios">
+  <meta property="og:description" content="Runtime app-icon switching, scheduling, and state recovery for Flutter.">
+  <meta property="og:type" content="website">
+  <title>dynamic_app_icon_changer — SRK Studios</title>
+  <link rel="icon" type="image/png" href="/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="/"><span class="brand-mark">SRK</span><span>Sivaramakrishna</span></a>
+    <nav aria-label="Primary navigation"><a href="/#work">Work</a><a href="/#open-source">Open source</a><a href="/#about">About</a><a class="nav-cta" href="mailto:kornisivaramkrishna@gmail.com">Let’s talk ↗</a></nav>
+  </header>
 
-    <header>
-        <a class="logo" href="/">
-            <img class="logo-img" src="/logo.png" alt="SRK Studios Logo">
-            SRK<span style="font-weight:500;color:var(--ink-faint);">Studios</span>
-        </a>
-        <nav>
-            <a href="/">Home</a>
-            <a href="#package">Package</a>
-            <a href="#features">Features</a>
-            <a href="#get-started">Get Started</a>
-            <a href="#api">API</a>
-            <a href="#faq">FAQ</a>
-            <a class="nav-cta" href="https://pub.dev/publishers/srkstudios.art/packages" target="_blank" rel="noopener">pub.dev</a>
-        </nav>
-    </header>
-
-    <main id="top">
-        <!-- ===== PAGE HERO ===== -->
-        <div class="hero hero--compact reveal visible">
-            <div class="badge">Verified Publisher on pub.dev</div>
-            <h1>Our <span class="gradient-text">open source</span> packages.</h1>
-            <p class="sub-desc">
-                Production-ready Flutter packages, MIT-licensed and free forever. The same
-                engineering standard we bring to client work — published for everyone.
-            </p>
-            <div class="stats-bar">
-                <div class="stat-box">
-                    <div class="stat-value">150</div>
-                    <div class="stat-label">Pub Points</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-value">2</div>
-                    <div class="stat-label">Platforms</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-value">MIT</div>
-                    <div class="stat-label">Licensed</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-value">100%</div>
-                    <div class="stat-label">Open Source</div>
-                </div>
-            </div>
+  <main class="package-main" id="main">
+    <section class="package-hero">
+      <a class="package-breadcrumb" href="/">← <span>Back to portfolio</span></a>
+      <div class="package-hero-grid">
+        <div class="reveal visible">
+          <p class="eyebrow">Open source / Flutter package</p>
+          <h1>dynamic_<wbr>app_<wbr>icon_<wbr>changer</h1>
+          <p class="package-summary">Change your Flutter app’s launcher icon at runtime on Android and iOS—with scheduled changes, automatic state recovery, and safeguards for third-party SDK components.</p>
+          <div class="package-badges"><span>v0.0.3</span><span>150 pub points</span><span>MIT license</span><span>Android + iOS</span></div>
+          <div class="package-actions"><a class="button button-primary" href="https://pub.dev/packages/dynamic_app_icon_changer" target="_blank" rel="noopener">View on pub.dev ↗</a><a class="button button-ghost" href="https://github.com/srkstudios/dynamic_app_icon_changer" target="_blank" rel="noopener">Source on GitHub ↗</a></div>
         </div>
-
-        <!-- ===== PACKAGE ===== -->
-        <section id="package" class="reveal">
-            <div class="section-header">
-                <div class="section-eyebrow">Featured Package</div>
-                <h2>Built for production</h2>
-                <p>Full documentation, platform-specific setup guides, and careful handling of the edge cases most plugins ignore.</p>
-            </div>
-
-            <div class="package-featured">
-                <div class="package-info">
-                    <div class="package-title-row">
-                        <div class="package-title mono">dynamic_app_icon_changer</div>
-                    </div>
-                    <div class="package-title-row">
-                        <span class="pill purple">v0.0.3</span>
-                        <span class="pill green">MIT</span>
-                        <span class="pill">Android</span>
-                        <span class="pill">iOS</span>
-                    </div>
-                    <p>
-                        A Flutter plugin that changes your app's launcher icon dynamically at runtime —
-                        no restart required. Perfect for seasonal branding, premium user tiers, event
-                        promotions, or A/B testing your icon. Includes scheduled icon changes with
-                        automatic reset, state recovery on device boot and app updates, and safeguards
-                        for third-party SDK components.
-                    </p>
-                    <div class="metric-row">
-                        <div class="metric"><b>150</b><span>Pub Points</span></div>
-                        <div class="metric"><b>4+</b><span>Likes</span></div>
-                        <div class="metric"><b>API 21+</b><span>Android</span></div>
-                        <div class="metric"><b>10.3+</b><span>iOS</span></div>
-                    </div>
-                    <div class="tag-row">
-                        <span class="tag">Runtime icon switching</span>
-                        <span class="tag">Scheduled changes</span>
-                        <span class="tag">Auto reset</span>
-                        <span class="tag">Boot recovery</span>
-                        <span class="tag">iOS badges</span>
-                        <span class="tag">OEM safe</span>
-                    </div>
-                    <div class="package-links">
-                        <a href="https://pub.dev/packages/dynamic_app_icon_changer" class="btn btn-primary" target="_blank" rel="noopener">View on pub.dev</a>
-                        <a href="https://pub.dev/packages/dynamic_app_icon_changer/example" class="btn btn-secondary" target="_blank" rel="noopener">Example</a>
-                    </div>
-                </div>
-                <div class="package-code">
-                    <div class="code-block">
-                        <div class="code-header">
-                            <span class="code-title">quick_look.dart</span>
-                            <button class="copy-btn" data-copy="await DynamicAppIconChanger.setAlternateIconName('IconBlue');">Copy</button>
-                        </div>
-<pre><span class="c-com">// Switch to an alternate icon</span>
-<span class="c-key">await</span> <span class="c-type">DynamicAppIconChanger</span>
-    .<span class="c-fn">setAlternateIconName</span>(<span class="c-str">'IconBlue'</span>);
-
-<span class="c-com">// Restore the default icon</span>
-<span class="c-key">await</span> <span class="c-type">DynamicAppIconChanger</span>
-    .<span class="c-fn">setAlternateIconName</span>(<span class="c-key">null</span>);
-
-<span class="c-com">// Which icon is active right now?</span>
-<span class="c-key">final</span> icon = <span class="c-key">await</span> <span class="c-type">DynamicAppIconChanger</span>
-    .alternateIconName;</pre>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ===== FEATURES ===== -->
-        <section id="features" class="reveal">
-            <div class="section-header">
-                <div class="section-eyebrow">Capabilities</div>
-                <h2>Engineered beyond the happy path</h2>
-                <p>Most plugins work in a demo. This one is designed for the messy reality of production devices, OEM quirks, and third-party SDKs.</p>
-            </div>
-            <div class="grid">
-                <div class="card">
-                    <div class="card-icon">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-                    </div>
-                    <h3>Runtime Icon Switching</h3>
-                    <p>Change the launcher icon on the fly on both Android and iOS. On Android, optional app relaunch support keeps the transition seamless for the user.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                    </div>
-                    <h3>Scheduled Changes</h3>
-                    <p>Schedule an icon to activate at a future time and automatically reset afterwards — ideal for seasonal campaigns, festivals, and limited-time events.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
-                    </div>
-                    <h3>State Recovery</h3>
-                    <p>Icons survive device reboots and app updates. The plugin automatically restores the correct icon state on boot — no stale or broken launcher entries.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                    </div>
-                    <h3>Protected Components</h3>
-                    <p>A Protected Components API keeps third-party SDK components (push notifications, deep links, analytics) safe while activity aliases are switched.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
-                    </div>
-                    <h3>OEM Blacklist Support</h3>
-                    <p>Some manufacturers handle activity-alias switching poorly. Built-in OEM blacklisting lets you gracefully skip problematic devices instead of crashing.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
-                    </div>
-                    <h3>iOS Badge Numbers</h3>
-                    <p>First-class badge management on iOS — set and read the app badge number right alongside icon changes, from a single unified API surface.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- ===== GETTING STARTED ===== -->
-        <section id="get-started" class="reveal">
-            <div class="section-header">
-                <div class="section-eyebrow">Getting Started</div>
-                <h2>Up and running in minutes</h2>
-                <p>Three steps from install to your first dynamic icon change.</p>
-            </div>
-            <div class="steps">
-                <div class="step">
-                    <div class="step-num">1</div>
-                    <div>
-                        <h3>Install the package</h3>
-                        <p>Add the dependency to your <code>pubspec.yaml</code> and fetch packages.</p>
-                        <div class="code-block">
-                            <div class="code-header">
-                                <span class="code-title">pubspec.yaml</span>
-                                <button class="copy-btn" data-copy="dependencies:&#10;  dynamic_app_icon_changer: ^0.0.3">Copy</button>
-                            </div>
-<pre><span class="c-key">dependencies</span>:
-  <span class="c-key">dynamic_app_icon_changer</span>: <span class="c-str">^0.0.3</span></pre>
-                        </div>
-                    </div>
-                </div>
-                <div class="step">
-                    <div class="step-num">2</div>
-                    <div>
-                        <h3>Configure your platforms</h3>
-                        <p>
-                            <b>Android</b> — declare an <code>activity-alias</code> per icon in <code>AndroidManifest.xml</code>, add icon drawables to your
-                            <code>mipmap</code> directories.
-                            <b>iOS</b> — drop icon PNGs into the Runner directory and register them under <code>CFBundleIcons</code> in <code>Info.plist</code>.
-                            Full step-by-step guides are in the package README.
-                        </p>
-                    </div>
-                </div>
-                <div class="step">
-                    <div class="step-num">3</div>
-                    <div>
-                        <h3>Switch icons from Dart</h3>
-                        <p>One import, one call. The same API works on both platforms.</p>
-                        <div class="code-block">
-                            <div class="code-header">
-                                <span class="code-title">main.dart</span>
-                                <button class="copy-btn" data-copy="import 'package:dynamic_app_icon_changer/dynamic_app_icon_changer.dart';&#10;&#10;await DynamicAppIconChanger.setAlternateIconName('IconBlue');">Copy</button>
-                            </div>
-<pre><span class="c-key">import</span> <span class="c-str">'package:dynamic_app_icon_changer/dynamic_app_icon_changer.dart'</span>;
-
-<span class="c-com">// Anywhere in your app:</span>
-<span class="c-key">await</span> <span class="c-type">DynamicAppIconChanger</span>.<span class="c-fn">setAlternateIconName</span>(<span class="c-str">'IconBlue'</span>);</pre>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ===== PLATFORM SUPPORT ===== -->
-        <section id="platforms" class="reveal">
-            <div class="section-header">
-                <div class="section-eyebrow">Compatibility</div>
-                <h2>Platform support</h2>
-            </div>
-            <div class="table-wrap">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Platform</th>
-                            <th>Minimum Version</th>
-                            <th>Mechanism</th>
-                            <th>Setup Required</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Android</td>
-                            <td><code>API 21+</code> (Lollipop)</td>
-                            <td>Activity aliases</td>
-                            <td>Manifest entries + mipmap drawables</td>
-                        </tr>
-                        <tr>
-                            <td>iOS</td>
-                            <td><code>10.3+</code></td>
-                            <td>Alternate app icons</td>
-                            <td>Icon PNGs + <code>CFBundleIcons</code> in Info.plist</td>
-                        </tr>
-                        <tr>
-                            <td>Flutter SDK</td>
-                            <td><code>Stable channel</code></td>
-                            <td>Platform channels</td>
-                            <td>None — pure Dart API surface</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <!-- ===== API REFERENCE ===== -->
-        <section id="api" class="reveal">
-            <div class="section-header">
-                <div class="section-eyebrow">API Overview</div>
-                <h2>A small, focused API</h2>
-                <p>Everything you need for dynamic icons — nothing you don't.</p>
-            </div>
-            <div class="api-list">
-                <div class="api-item">
-                    <code>setAlternateIconName(String? name)</code>
-                    <p>Switch the launcher icon. Pass an icon name to activate it, or <b>null</b> to restore the default icon.</p>
-                </div>
-                <div class="api-item">
-                    <code>alternateIconName</code>
-                    <p>Returns the currently active alternate icon name, or null when the default icon is in use.</p>
-                </div>
-                <div class="api-item">
-                    <code>scheduleAlternateIcon(...)</code>
-                    <p>Schedule an icon change for a future time with automatic reset — perfect for time-boxed seasonal icons.</p>
-                </div>
-                <div class="api-item">
-                    <code>registerProtectedComponents(...)</code>
-                    <p>Register third-party SDK components (push, deep-link handlers) so alias switching never disables them.</p>
-                </div>
-                <div class="api-item">
-                    <code>setBadgeNumber(int) / badgeNumber</code>
-                    <p>Set and read the app badge count on iOS from the same plugin — no extra dependency needed.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- ===== FAQ ===== -->
-        <section id="faq" class="reveal">
-            <div class="section-header">
-                <div class="section-eyebrow">FAQ</div>
-                <h2>Frequently asked questions</h2>
-            </div>
-            <div class="faq-list">
-                <details>
-                    <summary>Are SRK Studios packages free to use commercially?</summary>
-                    <p>Yes. All our packages are released under the MIT license, which permits free use in personal, open source, and commercial projects — no attribution UI or fees required.</p>
-                </details>
-                <details>
-                    <summary>Does changing the app icon require an app restart?</summary>
-                    <p>No restart is required to trigger the change. On iOS the system swaps the icon immediately (with a system alert). On Android, activity-alias switching may briefly relaunch the app — the plugin includes app relaunch support to make this transition smooth.</p>
-                </details>
-                <details>
-                    <summary>Will icon switching break my push notifications or deep links?</summary>
-                    <p>This is exactly what the Protected Components API is for. Register your third-party SDK components with <code>registerProtectedComponents()</code> and they remain enabled while launcher aliases are switched.</p>
-                </details>
-                <details>
-                    <summary>What happens after a device reboot or app update?</summary>
-                    <p>The plugin automatically recovers its state on boot and after app updates, restoring the icon the user last selected. Scheduled icons also resume or reset correctly.</p>
-                </details>
-                <details>
-                    <summary>Which devices are known to be problematic?</summary>
-                    <p>A small number of OEM launchers handle activity aliases poorly. The plugin ships with OEM blacklist support so you can skip icon switching gracefully on those devices instead of degrading the user experience.</p>
-                </details>
-                <details>
-                    <summary>How can I report a bug or request a feature?</summary>
-                    <p>Open an issue on our GitHub repository, or reach out directly at <code>kornisivaramkrishna@gmail.com</code>. Pull requests are welcome too.</p>
-                </details>
-            </div>
-        </section>
-
-        <!-- ===== CTA ===== -->
-        <section class="reveal">
-            <div class="cta-banner">
-                <h2>Ready to ship <span class="gradient-text">dynamic icons</span>?</h2>
-                <p>Install the package, follow the setup guide, and your app can change its identity at runtime today.</p>
-                <div class="cta-group">
-                    <a href="https://pub.dev/packages/dynamic_app_icon_changer" class="btn btn-primary" target="_blank" rel="noopener">Get the Package</a>
-                    <a href="/" class="btn btn-secondary">Hire the Studio</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-grid">
-            <div class="footer-brand">
-                <a class="logo" href="/">
-                    <img class="logo-img" src="/logo.png" alt="SRK Studios Logo">
-                    SRK<span style="font-weight:500;color:var(--ink-faint);">Studios</span>
-                </a>
-                <p>Independent Flutter development studio. We design, build, and ship cross-platform apps — and publish open source on pub.dev.</p>
-            </div>
-            <div class="footer-col">
-                <h4>Studio</h4>
-                <a href="/#services">Services</a>
-                <a href="/#process">Process</a>
-                <a href="/#about">About</a>
-                <a href="/#contact">Contact</a>
-            </div>
-            <div class="footer-col">
-                <h4>Open Source</h4>
-                <a href="https://pub.dev/packages/dynamic_app_icon_changer" target="_blank" rel="noopener">dynamic_app_icon_changer</a>
-                <a href="https://pub.dev/publishers/srkstudios.art/packages" target="_blank" rel="noopener">All packages on pub.dev</a>
-            </div>
-            <div class="footer-col">
-                <h4>Connect</h4>
-                <a href="https://github.com/srkstudios" target="_blank" rel="noopener">GitHub</a>
-                <a href="https://pub.dev/publishers/srkstudios.art/packages" target="_blank" rel="noopener">pub.dev</a>
-                <a href="mailto:kornisivaramkrishna@gmail.com">kornisivaramkrishna@gmail.com</a>
-            </div>
+        <div class="install-card reveal visible">
+          <div class="install-head"><span>pubspec.yaml</span><span>latest</span></div>
+          <pre><code>dependencies:
+  dynamic_app_icon_changer: ^0.0.3</code></pre>
+          <button class="copy-btn" type="button" data-copy="dynamic_app_icon_changer: ^0.0.3">Copy dependency</button>
+          <div class="feature-list"><span><i>✓</i> Works from Android API 21+</span><span><i>✓</i> Works from iOS 10.3+</span><span><i>✓</i> No manual recovery code</span></div>
         </div>
-        <div class="footer-bottom">
-            <span>&copy; 2026 SRK Studios &mdash; Verified Publisher on pub.dev</span>
-            <span>Made with Flutter in mind. MIT Licensed.</span>
-        </div>
-    </footer>
+      </div>
+    </section>
 
-    <script src="/script.js"></script>
+    <section class="package-content">
+      <div class="reveal">
+        <p class="eyebrow">Why it exists</p>
+        <h2>A small API for a surprisingly hard platform problem.</h2>
+        <p>Launcher icons look like a simple UI detail, but production apps need to account for Android activity aliases, iOS system behavior, device reboots, app updates, scheduled campaigns, and integrations that rely on component state. This package brings those concerns behind a focused Dart API.</p>
+      </div>
+
+      <h2 class="reveal">What it handles</h2>
+      <div class="feature-grid reveal">
+        <article class="feature-card"><b>Runtime switching</b><p>Move between pre-bundled icons on Android and iOS from one Flutter-facing API.</p></article>
+        <article class="feature-card"><b>Scheduled changes</b><p>Activate campaign or seasonal icons for a time window, then reset automatically.</p></article>
+        <article class="feature-card"><b>State recovery</b><p>Restore icon and component state after reboots, app updates, and Flutter engine attachment.</p></article>
+        <article class="feature-card"><b>Protected components</b><p>Safeguard third-party SDK components such as push-notification integrations during icon changes.</p></article>
+        <article class="feature-card"><b>OEM controls</b><p>Skip device brands whose launchers are known to handle dynamic icons unreliably.</p></article>
+        <article class="feature-card"><b>Badge support</b><p>Read and update the application badge number on supported iOS versions.</p></article>
+      </div>
+
+      <h2 class="reveal">Platform support</h2>
+      <div class="reveal">
+        <table class="platform-table">
+          <thead><tr><th>Capability</th><th>Android</th><th>iOS</th></tr></thead>
+          <tbody>
+            <tr><td>Alternate icon switching</td><td class="check">✓ API 21+</td><td class="check">✓ iOS 10.3+</td></tr>
+            <tr><td>Scheduled icon changes</td><td class="check">✓ Background alarms</td><td class="check">✓ Foreground check</td></tr>
+            <tr><td>Automatic recovery</td><td class="check">✓ Reboot + update</td><td class="check">✓ App lifecycle</td></tr>
+            <tr><td>Protected components</td><td class="check">✓</td><td>Not applicable</td></tr>
+            <tr><td>Badge number</td><td>Not supported</td><td class="check">✓</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="reveal">A clear Flutter API</h2>
+      <div class="reveal"><pre><code>await DynamicAppIconChanger.setAlternateIconName(
+  'IconBlue',
+  relaunch: true,
+);
+
+await DynamicAppIconChanger.scheduleAlternateIcon(
+  'IconHoliday',
+  endAt: DateTime.now().add(const Duration(days: 7)),
+);</code></pre></div>
+    </section>
+  </main>
+  <footer><span>© 2026 Sivaramakrishna / SRK Studios</span><a href="#main">Back to top ↑</a></footer>
+  <script src="/script.js"></script>
 </body>
 </html>

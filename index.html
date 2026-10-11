@@ -1,385 +1,162 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="SRK Studios — Independent Flutter development studio. We design, build, and ship high-quality cross-platform apps for Android and iOS, and publish open source packages on pub.dev." />
-    <meta name="keywords" content="Flutter developer, freelance Flutter, Flutter app development, cross-platform apps, Dart, SRK Studios" />
-    <meta property="og:title" content="SRK Studios | Flutter App Development Studio" />
-    <meta property="og:description" content="We design, build, and ship high-quality Flutter apps for Android and iOS — from idea to app store." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://srkstudios.art" />
-    <title>SRK Studios | Flutter App Development Studio</title>
-    <link rel="icon" type="image/png" href="/logo.png" />
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sivaramakrishna is a full-stack mobile developer building polished Flutter apps, reliable APIs, and open-source packages.">
+  <meta name="keywords" content="Sivaramakrishna, full-stack mobile developer, Flutter developer, Dart, Firebase, Node.js, SRK Studios">
+  <meta property="og:title" content="Sivaramakrishna — Full-stack mobile developer">
+  <meta property="og:description" content="Mobile products from interface to infrastructure, plus production-ready open source for Flutter.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://srkstudios.art">
+  <title>Sivaramakrishna — Full-stack mobile developer</title>
+  <link rel="icon" type="image/png" href="/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Sivaramakrishna, home"><span class="brand-mark">SRK</span><span>Sivaramakrishna</span></a>
+    <nav aria-label="Primary navigation">
+      <a href="#work">Work</a><a href="#open-source">Open source</a><a href="#about">About</a>
+      <a class="nav-cta" href="mailto:kornisivaramkrishna@gmail.com">Let’s talk <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
 
-    <header>
-        <a class="logo" href="/">
-            <img class="logo-img" src="/logo.png" alt="SRK Studios Logo">
-            SRK<span style="font-weight:500;color:var(--ink-faint);">Studios</span>
-        </a>
-        <nav>
-            <a href="#services">Services</a>
-            <a href="#process">Process</a>
-            <a href="#stack">Tech Stack</a>
-            <a href="/packages/">Open Source</a>
-            <a href="#about">About</a>
-            <a href="#faq">FAQ</a>
-            <a class="nav-cta" href="mailto:kornisivaramkrishna@gmail.com">Start a Project</a>
-        </nav>
-    </header>
-
-    <main id="top">
-        <!-- ===== HERO ===== -->
-        <div class="hero reveal visible">
-            <div class="badge badge--available">Available for new projects</div>
-            <h1>We build <span class="gradient-text">Flutter</span> apps that ship.</h1>
-            <p class="sub-desc">
-                SRK Studios is an independent Flutter development studio. From first sketch to
-                app store release, we design and build fast, polished cross-platform apps for
-                Android and iOS — one codebase, two platforms, zero compromise.
-            </p>
-            <div class="cta-group">
-                <a href="mailto:kornisivaramkrishna@gmail.com" class="btn btn-primary">
-                    Start a Project
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
-                <a href="/packages/" class="btn btn-secondary">
-                    See Our Open Source
-                </a>
-            </div>
-
-            <div class="stats-bar">
-                <div class="stat-box">
-                    <div class="stat-value">1</div>
-                    <div class="stat-label">Codebase</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-value">2</div>
-                    <div class="stat-label">Platforms</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-value">150</div>
-                    <div class="stat-label">Pub Points</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-value">100%</div>
-                    <div class="stat-label">Flutter &amp; Dart</div>
-                </div>
-            </div>
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy reveal visible">
+        <p class="kicker"><span class="status-dot"></span> Available for select projects</p>
+        <h1>I build the <span>mobile product</span>—and the systems behind it.</h1>
+        <p class="hero-lede">Hi, I’m Sivaramakrishna, a full-stack mobile developer focused on Flutter. I turn product ideas into responsive apps, dependable APIs, and production-ready releases.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↓</span></a>
+          <a class="button button-ghost" href="mailto:kornisivaramkrishna@gmail.com">Start a conversation</a>
         </div>
+        <ul class="proof-list" aria-label="Highlights">
+          <li><strong>Flutter + Dart</strong><span>cross-platform products</span></li>
+          <li><strong>Verified</strong><span>pub.dev publisher</span></li>
+          <li><strong>Full stack</strong><span>UI, APIs &amp; release</span></li>
+        </ul>
+      </div>
 
-        <!-- ===== MARQUEE ===== -->
-        <div class="marquee" aria-hidden="true">
-            <div class="marquee-track">
-                <span>Flutter Apps <b>&#10022;</b></span>
-                <span>Android <b>&#10022;</b></span>
-                <span>iOS <b>&#10022;</b></span>
-                <span>MVP to Launch <b>&#10022;</b></span>
-                <span>Open Source <b>&#10022;</b></span>
-                <span>pub.dev Publisher <b>&#10022;</b></span>
-                <span>UI/UX <b>&#10022;</b></span>
-                <span>One Codebase <b>&#10022;</b></span>
-                <span>Flutter Apps <b>&#10022;</b></span>
-                <span>Android <b>&#10022;</b></span>
-                <span>iOS <b>&#10022;</b></span>
-                <span>MVP to Launch <b>&#10022;</b></span>
-                <span>Open Source <b>&#10022;</b></span>
-                <span>pub.dev Publisher <b>&#10022;</b></span>
-                <span>UI/UX <b>&#10022;</b></span>
-                <span>One Codebase <b>&#10022;</b></span>
-            </div>
+      <div class="hero-visual reveal visible" aria-label="Illustration of a mobile product moving from code to app">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="code-window">
+          <div class="window-bar"><span></span><span></span><span></span><small>product.dart</small></div>
+          <pre><code><i>class</i> Product {
+  <b>final</b> experience;
+  <b>final</b> infrastructure;
+
+  Product.ship({
+    <em>this</em>.experience,
+    <em>this</em>.infrastructure,
+  });
+}</code></pre>
         </div>
-
-        <!-- ===== SERVICES ===== -->
-        <section id="services" class="reveal">
-            <div class="section-header">
-                <div class="section-eyebrow">What We Do</div>
-                <h2>Full-cycle Flutter development</h2>
-                <p>Whether you're starting from a napkin sketch or rescuing an existing codebase, we cover the entire journey of a mobile app.</p>
-            </div>
-            <div class="grid">
-                <div class="card">
-                    <div class="card-icon">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
-                    </div>
-                    <h3>App Development</h3>
-                    <p>End-to-end Flutter apps for Android and iOS — architecture, state management, offline support, and a UI that feels native on both platforms.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
-                    </div>
-                    <h3>MVP for Startups</h3>
-                    <p>Have an idea to validate? We scope a lean first version, build it fast without cutting corners on quality, and get it into real users' hands.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
-                    </div>
-                    <h3>UI/UX Implementation</h3>
-                    <p>Pixel-perfect builds from your Figma or design files — smooth animations, responsive layouts, dark mode, and accessibility done right.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-                    </div>
-                    <h3>Plugin &amp; Native Integration</h3>
-                    <p>Custom Flutter plugins with platform channels — Kotlin on Android, Swift on iOS. We publish our own on pub.dev, so we know what production-grade means.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
-                    </div>
-                    <h3>Maintenance &amp; Upgrades</h3>
-                    <p>Flutter version migrations, dependency upgrades, performance tuning, and refactoring legacy codebases so they stay fast and shippable.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
-                    </div>
-                    <h3>Release &amp; Store Deployment</h3>
-                    <p>Signing, store listings, review guidelines, staged rollouts, and CI/CD pipelines — we take your app all the way to the Play Store and App Store.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- ===== PROCESS ===== -->
-        <section id="process" class="reveal">
-            <div class="section-header">
-                <div class="section-eyebrow">How We Work</div>
-                <h2>A process without surprises</h2>
-                <p>Clear milestones, working builds you can install from week one, and direct communication with the developer actually writing your code.</p>
-            </div>
-            <div class="steps">
-                <div class="step">
-                    <div class="step-num">1</div>
-                    <div>
-                        <h3>Discovery</h3>
-                        <p>We start with a conversation about your idea, users, and budget. You get an honest assessment of scope, a proposed milestone plan, and a fixed quote — no vague estimates.</p>
-                    </div>
-                </div>
-                <div class="step">
-                    <div class="step-num">2</div>
-                    <div>
-                        <h3>Design &amp; Prototype</h3>
-                        <p>Wireframes and clickable prototypes before any heavy build-out. We agree on what the app looks and feels like early, when changes are cheap.</p>
-                    </div>
-                </div>
-                <div class="step">
-                    <div class="step-num">3</div>
-                    <div>
-                        <h3>Build &amp; Iterate</h3>
-                        <p>Development in short cycles with an installable build at every milestone. You watch the app grow on your own phone and steer priorities as we go.</p>
-                    </div>
-                </div>
-                <div class="step">
-                    <div class="step-num">4</div>
-                    <div>
-                        <h3>Launch &amp; Support</h3>
-                        <p>Store submission, release monitoring, and a handover with clean documentation. Optional maintenance keeps your app healthy after launch.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ===== TECH STACK ===== -->
-        <section id="stack" class="reveal">
-            <div class="section-header">
-                <div class="section-eyebrow">Tech Stack</div>
-                <h2>Tools we build with</h2>
-                <p>A pragmatic, battle-tested stack — chosen for reliability, not hype.</p>
-            </div>
-            <div class="stack-tags">
-                <span class="tag">Flutter</span>
-                <span class="tag">Dart</span>
-                <span class="tag">Kotlin</span>
-                <span class="tag">Swift</span>
-                <span class="tag">Firebase</span>
-                <span class="tag">REST &amp; GraphQL</span>
-                <span class="tag">Riverpod / Bloc</span>
-                <span class="tag">SQLite / Drift</span>
-                <span class="tag">Platform Channels</span>
-                <span class="tag">GitHub Actions</span>
-                <span class="tag">Codemagic</span>
-                <span class="tag">Play Store &amp; App Store</span>
-            </div>
-        </section>
-
-        <!-- ===== OPEN SOURCE ===== -->
-        <section id="open-source" class="reveal">
-            <div class="section-header">
-                <div class="section-eyebrow">Open Source</div>
-                <h2>We publish what we build</h2>
-                <p>SRK Studios is a verified publisher on pub.dev. Our packages are the same production-grade tools we use in client work.</p>
-            </div>
-            <div class="os-card">
-                <div class="package-title-row">
-                    <div class="package-title mono">dynamic_app_icon_changer</div>
-                    <span class="pill purple">v0.0.3</span>
-                    <span class="pill green">MIT</span>
-                </div>
-                <p style="color:var(--ink-soft); line-height:1.75; margin:14px 0 26px; font-size:0.95rem;">
-                    Change your Flutter app's launcher icon at runtime on Android and iOS — with
-                    scheduled changes, state recovery after reboots and updates, and safeguards for
-                    third-party SDKs. 150 pub points and counting.
-                </p>
-                <div class="package-links">
-                    <a href="/packages/" class="btn btn-primary">
-                        Package Details
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                    </a>
-                    <a href="https://pub.dev/packages/dynamic_app_icon_changer" class="btn btn-secondary" target="_blank" rel="noopener">View on pub.dev</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- ===== ABOUT ===== -->
-        <section id="about" class="reveal">
-            <div class="section-header">
-                <div class="section-eyebrow">About</div>
-                <h2>The studio behind the code</h2>
-            </div>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p>
-                        SRK Studios is the independent studio of a <b>freelance Flutter developer</b> —
-                        which means when you hire us, the person you talk to is the person who writes
-                        your code. No account managers, no hand-offs, no telephone game.
-                    </p>
-                    <p>
-                        We hold client work to the same bar as our open source: an app isn't finished
-                        when the demo works — it's finished when it survives device reboots, OS
-                        updates, flaky networks, and real users. That mindset is why we're a
-                        <b>verified publisher on pub.dev</b> under
-                        <span class="mono" style="color:var(--accent);">srkstudios.art</span>.
-                    </p>
-                    <p>
-                        Based in India, working with clients worldwide. Remote-first, async-friendly,
-                        and responsive across time zones.
-                    </p>
-                </div>
-                <div class="about-values">
-                    <div class="value-item">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                        <div>
-                            <b>Direct communication</b>
-                            <p>You work with the developer, not a middleman. Questions get answered by the person building your app.</p>
-                        </div>
-                    </div>
-                    <div class="value-item">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                        <div>
-                            <b>Production mindset</b>
-                            <p>Edge cases, error states, and offline behavior are part of the plan — not an afterthought.</p>
-                        </div>
-                    </div>
-                    <div class="value-item">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                        <div>
-                            <b>You own everything</b>
-                            <p>Full source code, accounts, and documentation are yours from day one. No lock-in, ever.</p>
-                        </div>
-                    </div>
-                    <div class="value-item">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                        <div>
-                            <b>Proof in public</b>
-                            <p>Our open source packages on pub.dev show exactly how we write code — before you spend a rupee.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ===== FAQ ===== -->
-        <section id="faq" class="reveal">
-            <div class="section-header">
-                <div class="section-eyebrow">FAQ</div>
-                <h2>Working with us</h2>
-            </div>
-            <div class="faq-list">
-                <details>
-                    <summary>What kind of projects do you take on?</summary>
-                    <p>New Flutter apps from scratch, MVPs for startups, feature development in existing Flutter codebases, custom plugin development, and rescue/refactoring work on apps that have grown messy. If it's Flutter, we're interested.</p>
-                </details>
-                <details>
-                    <summary>How do we start a project?</summary>
-                    <p>Email us at <code>kornisivaramkrishna@gmail.com</code> with a short description of your idea or problem. We'll reply with follow-up questions, then set up a call. After discovery you get a written proposal with scope, milestones, timeline, and price.</p>
-                </details>
-                <details>
-                    <summary>How do you charge?</summary>
-                    <p>Fixed price per milestone for well-defined scopes, or a weekly/hourly rate for ongoing and exploratory work. Either way, the terms are agreed in writing before any work starts — no surprise invoices.</p>
-                </details>
-                <details>
-                    <summary>Who owns the code and accounts?</summary>
-                    <p>You do — completely. The repository, the store listings, the backend accounts, everything is created under your ownership or handed over at delivery, with documentation to onboard any future developer.</p>
-                </details>
-                <details>
-                    <summary>Do you provide support after launch?</summary>
-                    <p>Yes. We offer ongoing maintenance: dependency and Flutter version upgrades, OS compatibility fixes, monitoring, and small feature iterations. Support terms are flexible — from on-demand to monthly retainers.</p>
-                </details>
-                <details>
-                    <summary>Can you join an existing team or codebase?</summary>
-                    <p>Absolutely. We regularly work alongside in-house teams and other freelancers — code reviews, pairing, and following your existing conventions and CI are all part of the service.</p>
-                </details>
-            </div>
-        </section>
-
-        <!-- ===== CTA ===== -->
-        <section id="contact" class="reveal">
-            <div class="cta-banner">
-                <h2>Have an app idea? <span class="gradient-text">Let's build it.</span></h2>
-                <p>Tell us what you want to make. You'll get an honest reply from the developer who'd build it — usually within a day.</p>
-                <div class="cta-group">
-                    <a href="mailto:kornisivaramkrishna@gmail.com" class="btn btn-primary">Start a Project</a>
-                    <a href="https://github.com/srkstudios" class="btn btn-secondary" target="_blank" rel="noopener">See Our GitHub</a>
-                </div>
-                <a class="cta-email" href="mailto:kornisivaramkrishna@gmail.com">kornisivaramkrishna@gmail.com</a>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-grid">
-            <div class="footer-brand">
-                <a class="logo" href="/">
-                    <img class="logo-img" src="/logo.png" alt="SRK Studios Logo">
-                    SRK<span style="font-weight:500;color:var(--ink-faint);">Studios</span>
-                </a>
-                <p>Independent Flutter development studio. We design, build, and ship cross-platform apps — and publish open source on pub.dev.</p>
-            </div>
-            <div class="footer-col">
-                <h4>Studio</h4>
-                <a href="#services">Services</a>
-                <a href="#process">Process</a>
-                <a href="#about">About</a>
-                <a href="#faq">FAQ</a>
-            </div>
-            <div class="footer-col">
-                <h4>Open Source</h4>
-                <a href="/packages/">dynamic_app_icon_changer</a>
-                <a href="https://pub.dev/publishers/srkstudios.art/packages" target="_blank" rel="noopener">All packages on pub.dev</a>
-            </div>
-            <div class="footer-col">
-                <h4>Connect</h4>
-                <a href="https://github.com/srkstudios" target="_blank" rel="noopener">GitHub</a>
-                <a href="https://pub.dev/publishers/srkstudios.art/packages" target="_blank" rel="noopener">pub.dev</a>
-                <a href="mailto:kornisivaramkrishna@gmail.com">kornisivaramkrishna@gmail.com</a>
-            </div>
+        <div class="phone-shell">
+          <div class="phone-top"><span></span></div><div class="mini-label">BUILD / 01</div><div class="mini-orb"></div>
+          <h2>Designed to feel simple.</h2>
+          <div class="mini-card"><span>Performance</span><strong>60 fps</strong></div>
+          <div class="mini-card"><span>Platforms</span><strong>iOS + Android</strong></div>
+          <div class="mini-button">Ship product <span>→</span></div>
         </div>
-        <div class="footer-bottom">
-            <span>&copy; 2026 SRK Studios &mdash; Verified Publisher on pub.dev</span>
-            <span>Built with one codebase. Shipped to two platforms.</span>
-        </div>
-    </footer>
+        <div class="float-chip chip-api">REST API</div><div class="float-chip chip-pub">pub.dev</div>
+      </div>
+    </section>
 
-    <script src="/script.js"></script>
+    <section class="signal-strip" aria-label="Core capabilities">
+      <span>Product thinking</span><i>✦</i><span>Flutter engineering</span><i>✦</i><span>Backend integration</span><i>✦</i><span>App-store delivery</span><i>✦</i>
+    </section>
+
+    <section class="section" id="work">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow">Selected work / 2021–now</p><h2>Proof, not promises.</h2></div>
+        <p>Open-source and product experiments that show how I think across mobile, backend, and platform boundaries.</p>
+      </div>
+      <div class="work-grid">
+        <article class="project project-featured reveal">
+          <div class="project-visual icon-lab">
+            <div class="app-icon icon-a">A</div><div class="app-icon icon-b">B</div><div class="switch-line"><span></span></div><div class="visual-caption">Runtime icon switching</div>
+          </div>
+          <div class="project-copy">
+            <div class="project-meta"><span>01 / Flutter plugin</span><span>150 pub points</span></div>
+            <h3>Dynamic App Icon Changer</h3>
+            <p>A Flutter plugin for changing app icons at runtime on Android and iOS, with scheduling, state recovery, protected components, and real-world platform safeguards.</p>
+            <ul class="tag-list"><li>Flutter</li><li>Dart</li><li>Kotlin</li><li>Swift</li></ul>
+            <div class="project-links"><a href="/packages/">View case study <span aria-hidden="true">↗</span></a><a href="https://pub.dev/packages/dynamic_app_icon_changer" target="_blank" rel="noopener">pub.dev <span aria-hidden="true">↗</span></a></div>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-visual omr-visual"><div class="sheet"><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="scan-line"></div><div class="result-badge">200 OK</div></div>
+          <div class="project-copy">
+            <div class="project-meta"><span>02 / Backend</span><span>Open source</span></div>
+            <h3>OMR Checker API</h3>
+            <p>A Python web-service layer for processing OMR answer sheets over HTTP, with health checks, URL-based inputs, Docker support, and structured JSON responses.</p>
+            <ul class="tag-list"><li>Python</li><li>Flask</li><li>Docker</li><li>REST</li></ul>
+            <div class="project-links"><a href="https://github.com/srkstudios/OMR-ANALYZER" target="_blank" rel="noopener">View repository <span aria-hidden="true">↗</span></a></div>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-visual reader-visual"><div class="story-card"><b>NEWS</b><span></span><span></span><span></span></div><div class="story-card story-card-back"><b>LIVE</b><span></span><span></span></div></div>
+          <div class="project-copy">
+            <div class="project-meta"><span>03 / Mobile</span><span>Flutter</span></div>
+            <h3>News Reader</h3>
+            <p>A cross-platform Flutter news-reader project exploring app state management, localized content, and responsive mobile interface patterns.</p>
+            <ul class="tag-list"><li>Flutter</li><li>Dart</li><li>Localization</li><li>State management</li></ul>
+            <div class="project-links"><a href="https://github.com/srkstudios/news" target="_blank" rel="noopener">View repository <span aria-hidden="true">↗</span></a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section open-source" id="open-source">
+      <div class="package-panel reveal">
+        <div class="package-intro">
+          <p class="eyebrow">Open source / Featured package</p><h2>Built for the edge cases, not just the demo.</h2>
+          <p>I publish the infrastructure I wish existed. <code>dynamic_app_icon_changer</code> handles runtime icon changes across Android and iOS—and keeps working through reboots, app updates, and third-party SDK integrations.</p>
+          <div class="metric-row"><div><strong>150</strong><span>pub points</span></div><div><strong>4</strong><span>likes</span></div><div><strong>MIT</strong><span>license</span></div></div>
+        </div>
+        <div class="install-card">
+          <div class="install-head"><span>Install package</span><span>v0.0.3</span></div>
+          <pre><code>dependencies:
+  dynamic_app_icon_changer: ^0.0.3</code></pre>
+          <button class="copy-btn" type="button" data-copy="dynamic_app_icon_changer: ^0.0.3">Copy dependency</button>
+          <div class="feature-list"><span><i>✓</i> Scheduled icon changes</span><span><i>✓</i> Android + iOS support</span><span><i>✓</i> Automatic state recovery</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="about-grid reveal">
+        <div class="portrait-card" aria-hidden="true"><div class="portrait-monogram">SRK</div><div class="portrait-footer"><span>IND / REMOTE</span><span>06:30 → UTC</span></div></div>
+        <div class="about-copy">
+          <p class="eyebrow">About me</p><h2>One developer. The whole product surface.</h2>
+          <p>I’m Sivaramakrishna, the developer behind SRK Studios. My home base is Flutter, but my work follows the product wherever it needs to go—from accessible interface details and native platform code to Firebase, REST APIs, Python services, and release automation.</p>
+          <p>I care about the invisible parts of good software: thoughtful states, maintainable architecture, resilient integrations, and clean handover. The goal is not simply to make an app run. It is to make it ready for real people.</p>
+          <div class="skills-grid">
+            <div><span>Mobile</span><p>Flutter · Dart · Kotlin · Swift</p></div><div><span>Backend</span><p>Firebase · REST · Node.js · Python</p></div>
+            <div><span>Product</span><p>UI implementation · Prototyping · Accessibility</p></div><div><span>Delivery</span><p>GitHub Actions · Codemagic · App stores</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section reveal" id="contact">
+      <p class="eyebrow">Have a product in mind?</p><h2>Let’s make the next build worth shipping.</h2>
+      <div class="contact-actions">
+        <a class="button button-light" href="mailto:kornisivaramkrishna@gmail.com">kornisivaramkrishna@gmail.com <span aria-hidden="true">↗</span></a>
+        <a class="text-link" href="https://github.com/srkstudios" target="_blank" rel="noopener">GitHub ↗</a>
+        <a class="text-link" href="https://pub.dev/publishers/srkstudios.art/packages" target="_blank" rel="noopener">pub.dev ↗</a>
+      </div>
+    </section>
+  </main>
+  <footer><span>© 2026 Sivaramakrishna / SRK Studios</span><a href="#top">Back to top ↑</a></footer>
+  <script src="/script.js"></script>
 </body>
 </html>
