@@ -24,7 +24,8 @@ code, pre, .eyebrow, .kicker, .project-meta, .tag-list, .mini-label, .float-chip
 
 .site-header { height: 76px; width: 100%; padding: 0 max(24px, calc((100vw - var(--max)) / 2)); display: flex; align-items: center; justify-content: space-between; position: fixed; inset: 0 0 auto; z-index: 50; background: rgba(10,11,13,.78); backdrop-filter: blur(18px); border-bottom: 1px solid rgba(255,255,255,.08); }
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; font-size: .92rem; font-weight: 700; letter-spacing: -.02em; }
-.brand-mark { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; color: #0a0b0d; background: var(--lime); font: 500 .72rem "DM Mono", monospace; box-shadow: 0 0 0 5px rgba(199,245,90,.1); }
+.brand-mark { display: grid; place-items: center; width: 42px; height: 42px; }
+.brand-mark img { display: block; width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 0 10px rgba(152,168,255,.18)); }
 .brand > span:last-child { display: flex; align-items: baseline; gap: 8px; }
 .brand small { color: var(--muted); font: 400 .58rem "DM Mono", monospace; }
 nav { display: flex; align-items: center; gap: 30px; }
